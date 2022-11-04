@@ -22,6 +22,7 @@ public class AppFrame extends JFrame{
 	
 	private JButton newTask;
 	private JButton clear;
+	private JButton time;
 	
 	AppFrame()
 	{
@@ -42,7 +43,6 @@ public class AppFrame extends JFrame{
 		addListeners();
 	}
 	
-	
 	public void addListeners()
 	{
 		newTask.addMouseListener(new MouseAdapter()
@@ -54,23 +54,19 @@ public class AppFrame extends JFrame{
 				list.add(task);
 				list.updateNumbers();
 				
-				
 				task.getDone().addMouseListener(new MouseAdapter()
 				{
 					@override
 					public void mousePressed(MouseEvent e)
 					{
-						
 						task.changeState();
 						list.updateNumbers();
 						revalidate();
-						
 					}
 				});
 			}
 			
 		});
-		
 		
 		clear.addMouseListener(new MouseAdapter()
 		{
@@ -82,5 +78,4 @@ public class AppFrame extends JFrame{
 			}
 		});
 	}	
-	
 }
