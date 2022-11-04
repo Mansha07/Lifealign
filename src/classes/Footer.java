@@ -37,9 +37,9 @@ public class Footer extends JPanel{
 		// clear.setBackground();
 		this.add(clear);
 
-		
+
 		this.add(Box.createHorizontalStrut(20)); // Space between buttons
-		time = new JButton("Add slot");
+		time = new JButton("Set a Time");
 		time.setFont(new Font("Sans-serif",Font.PLAIN, 20));
 		time.setBorder(emptyBorder);
 		// clear.setBackground();
@@ -53,6 +53,7 @@ public class Footer extends JPanel{
 	public JButton getClear() {
 		return clear;
 	}
+
 	public JButton getTime(){
 		return time;
 	}

@@ -78,5 +78,14 @@ public class AppFrame extends JFrame{
 				repaint();
 			}
 		});
+
+		time.addMouseListener(new MouseAdapter()
+		{
+			@override
+			public void mousePressed(MouseEvent e)
+			{
+				
+			}
+		});
 	}	
 }
