@@ -1,19 +1,17 @@
 package classes;
 
-import java.awt.BorderLayout; // Abstract Window Toolkit, an API
+import java.awt.BorderLayout;
 
-import java.awt.event.MouseAdapter; // Mouse Adapter helps to track mouse pointers when the mouse is pointing 
-									// to a specific place, pressed, deleted, a task is created from it
+import java.awt.event.MouseAdapter; // Mouse Adapter helps to track mouse pointers when the mouse is pointing to a 
+									// specific place, pressed, deleted, a task is created from it
 
-import java.awt.event.MouseEvent;   // The action that occured when clicking a mouse button and what action 
-									// is done
+import java.awt.event.MouseEvent;   // The action that occured when clicking a mouse button and what action is done
 
 // javax swing is used for providing the smallest of tasks at the minimal effort
 
 import javax.swing.JButton; // An implementation of the push/labeled button
 
-import javax.swing.JFrame;  // The main window where diff components like buttons, labeles, etc. are added 
-							// in a GUI
+import javax.swing.JFrame;  // The main window where diff components like buttons, labeles, etc. are added in a GUI
 
 
 public class AppFrame extends JFrame{
@@ -21,8 +19,6 @@ public class AppFrame extends JFrame{
 	private TitleBar title;
 	private Footer footer;
 	private List list;
-
-	// These 3 are set according to the position they are going to be in the GUI
 	
 	private JButton newTask;
 	private JButton clear;
@@ -43,7 +39,7 @@ public class AppFrame extends JFrame{
 		
 		newTask = footer.getNewTask();
 		clear = footer.getClear();
-		Time=footer.time();
+		Time=footer.time
 		addListeners();
 	}
 	

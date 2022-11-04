@@ -37,7 +37,8 @@ public class Footer extends JPanel{
 		// clear.setBackground();
 		this.add(clear);
 		
-		
+		time = new JButton("Add free slots");
+		time.setFont(new Font("Sans-serif",Font.PLAIN, 20));
 	}
 	
 	public JButton getNewTask(){
