@@ -36,15 +36,14 @@ public class Footer extends JPanel{
 		clear.setBorder(emptyBorder);
 		// clear.setBackground();
 		this.add(clear);
-<<<<<<< HEAD
-		
-		time = new JButton("Add Your Slot");
-	    time.setBorder(emptyBorder);
-	    time.setFont(new Font("Sans-serif",Font.PLAIN, 20));
-		time.setVerticalAlignment(JButton.BOTTOM);
 
-=======
->>>>>>> f4a78738d158a521643fcdca7ec223fa67f36813
+		
+		this.add(Box.createHorizontalStrut(20)); // Space between buttons
+		time = new JButton("Add slot");
+		time.setFont(new Font("Sans-serif",Font.PLAIN, 20));
+		time.setBorder(emptyBorder);
+		// clear.setBackground();
+		this.add(time);
 	}
 	
 	public JButton getNewTask(){
@@ -54,7 +53,7 @@ public class Footer extends JPanel{
 	public JButton getClear() {
 		return clear;
 	}
-	public JButton gettime(){
+	public JButton getTime(){
 		return time;
 	}
 }

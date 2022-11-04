@@ -40,6 +40,7 @@ public class AppFrame extends JFrame{
 		
 		newTask = footer.getNewTask();
 		clear = footer.getClear();
+		time=footer.getTime();
 		addListeners();
 	}
 	
