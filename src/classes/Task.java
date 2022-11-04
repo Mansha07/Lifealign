@@ -21,7 +21,7 @@ public class Task extends JPanel{
 	Task()
 	{
 		this.setPreferredSize(new Dimension(400,20));
-		this.setBackground(Color.red);
+		this.setBackground(Color.yellow);
 		
 		this.setLayout(new BorderLayout());
 		
