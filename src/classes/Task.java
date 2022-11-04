@@ -32,9 +32,9 @@ public class Task extends JPanel{
 		index.setHorizontalAlignment(JLabel.CENTER);
 		this.add(index,BorderLayout.WEST);
 	
-		taskName = new JTextField("TEST");
+		taskName = new JTextField("Enter the task");
 		taskName.setBorder(BorderFactory.createEmptyBorder());
-		taskName.setBackground(Color.red);
+		taskName.setBackground(Color.yellow);
 
 		
 		this.add(taskName,BorderLayout.CENTER);
