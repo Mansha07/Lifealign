@@ -14,7 +14,7 @@ public class Footer extends JPanel{
 	
 	JButton addTask;
 	JButton clear;
-	
+	JButton time;
 	
 	Border emptyBorder = BorderFactory.createEmptyBorder();
 	
@@ -36,7 +36,13 @@ public class Footer extends JPanel{
 		clear.setBorder(emptyBorder);
 		//clear.setBackground();
 		this.add(clear);
-		
+
+		this.add(Box.createHorizontalStrut(20));//Space between buttons
+		time = new JButton("Enter the free slot");
+		time.setFont(new Font("Sans-serif",Font.PLAIN, 20));
+		time.setVerticalAlignment(JButton.BOTTOM);
+		//clear.setBackground();
+		this.add(time);
 		
 	}
 	
@@ -46,5 +52,8 @@ public class Footer extends JPanel{
 	
 	public JButton getClear() {
 		return clear;
+	}
+	public JButton time(){
+		return time;
 	}
 }
