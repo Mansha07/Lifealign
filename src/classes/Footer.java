@@ -36,9 +36,6 @@ public class Footer extends JPanel{
 		clear.setBorder(emptyBorder);
 		// clear.setBackground();
 		this.add(clear);
-		
-		time = new JButton("Add free slots");
-		time.setFont(new Font("Sans-serif",Font.PLAIN, 20));
 	}
 	
 	public JButton getNewTask(){
@@ -47,8 +44,5 @@ public class Footer extends JPanel{
 	
 	public JButton getClear() {
 		return clear;
-	}
-	public JButton time(){
-		return time;
 	}
 }

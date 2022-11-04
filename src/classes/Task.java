@@ -36,7 +36,6 @@ public class Task extends JPanel{
 		taskName.setBorder(BorderFactory.createEmptyBorder());
 		taskName.setBackground(Color.yellow);
 
-		
 		this.add(taskName,BorderLayout.CENTER);
 		
 		done = new JButton("Done");
@@ -53,7 +52,6 @@ public class Task extends JPanel{
 		this.index.setText(num+"");
 		this.revalidate();
 	}
-	
 	
 	public JButton getDone()
 	{

@@ -22,7 +22,7 @@ public class AppFrame extends JFrame{
 	
 	private JButton newTask;
 	private JButton clear;
-	private JButton Time;
+	
 	AppFrame()
 	{
 		this.setSize(400,700);
@@ -39,7 +39,7 @@ public class AppFrame extends JFrame{
 		
 		newTask = footer.getNewTask();
 		clear = footer.getClear();
-		Time=footer.time();
+
 		addListeners();
 	}
 	
