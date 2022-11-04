@@ -1,9 +1,10 @@
 package classes;
+
 import java.awt.Dimension;
 import java.awt.Font;
 
-import javax.swing.JLabel;
-import javax.swing.JPanel;
+import javax.swing.JLabel; // Used to fit text, image or both in a short space
+import javax.swing.JPanel; // Used to fit components in a precise manner, in a GUI
 
 public class TitleBar extends JPanel{
 
