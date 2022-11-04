@@ -39,10 +39,9 @@ public class AppFrame extends JFrame{
 		
 		newTask = footer.getNewTask();
 		clear = footer.getClear();
-		Time=footer.time
+		Time=footer.time();
 		addListeners();
 	}
-	
 	
 	public void addListeners()
 	{
@@ -55,23 +54,19 @@ public class AppFrame extends JFrame{
 				list.add(task);
 				list.updateNumbers();
 				
-				
 				task.getDone().addMouseListener(new MouseAdapter()
 				{
 					@override
 					public void mousePressed(MouseEvent e)
 					{
-						
 						task.changeState();
 						list.updateNumbers();
 						revalidate();
-						
 					}
 				});
 			}
 			
 		});
-		
 		
 		clear.addMouseListener(new MouseAdapter()
 		{
@@ -83,5 +78,4 @@ public class AppFrame extends JFrame{
 			}
 		});
 	}	
-	
 }
