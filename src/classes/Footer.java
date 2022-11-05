@@ -26,7 +26,7 @@ public class Footer extends JPanel{
 		addTask.setBorder(emptyBorder);
 		addTask.setFont(new Font("Sans-serif",Font.PLAIN, 20));
 		addTask.setVerticalAlignment(JButton.BOTTOM);
-		// addTask.setBackground(Color.white);
+		this.setBackground(Color.yellow);
 		this.add(addTask);
 		
 		
@@ -34,7 +34,7 @@ public class Footer extends JPanel{
 		clear = new JButton("Clear Finished Tasks");
 		clear.setFont(new Font("Sans-serif",Font.PLAIN, 20));
 		clear.setBorder(emptyBorder);
-		// clear.setBackground();
+		this.setBackground(Color.yellow);
 		this.add(clear);
 
 
@@ -42,7 +42,7 @@ public class Footer extends JPanel{
 		time = new JButton("Set a Time");
 		time.setFont(new Font("Sans-serif",Font.PLAIN, 20));
 		time.setBorder(emptyBorder);
-		// clear.setBackground();
+		this.setBackground(Color.yellow);
 		this.add(time);
 	}
 	

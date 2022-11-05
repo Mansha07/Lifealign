@@ -3,6 +3,7 @@ package classes;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.awt.Color;
 
 import javax.swing.JPanel;
 
@@ -14,6 +15,7 @@ public class List extends JPanel{
 		layout.setVgap(5);
 		
 		this.setLayout(layout);
+		this.setBackground(Color.yellow);
 		this.setPreferredSize(new Dimension(400,560));
 	}
 	

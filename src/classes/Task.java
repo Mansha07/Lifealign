@@ -30,11 +30,12 @@ public class Task extends JPanel{
 		index = new JLabel("");
 		index.setPreferredSize(new Dimension(20,20));
 		index.setHorizontalAlignment(JLabel.CENTER);
+		this.setBackground(Color.orange);
 		this.add(index,BorderLayout.WEST);
 	
 		taskName = new JTextField("Enter the task");
 		taskName.setBorder(BorderFactory.createEmptyBorder());
-		taskName.setBackground(Color.yellow);
+		taskName.setBackground(Color.orange);
 
 		this.add(taskName,BorderLayout.CENTER);
 		
@@ -42,6 +43,7 @@ public class Task extends JPanel{
 		done.setPreferredSize(new Dimension(40,20));
 		done.setBorder(BorderFactory.createEmptyBorder());
 		done.setFocusPainted(false);
+		this.setBackground(Color.yellow);
 		
 		this.add(done,BorderLayout.EAST);
 		
