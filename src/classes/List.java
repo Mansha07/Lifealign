@@ -15,7 +15,7 @@ public class List extends JPanel{
 		layout.setVgap(5);
 		
 		this.setLayout(layout);
-		this.setBackground(Color.yellow);
+		this.setBackground(Color.white);
 		this.setPreferredSize(new Dimension(400,560));
 	}
 	

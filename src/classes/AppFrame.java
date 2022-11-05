@@ -1,6 +1,6 @@
 package classes;
 
-import java.awt.BorderLayout;
+import java.awt.BorderLayout; // AWT - Abstract Window Toolkit
 
 import java.awt.event.MouseAdapter; // Mouse Adapter helps to track mouse pointers when the mouse is pointing to a 
 									// specific place, pressed, deleted, a task is created from it
@@ -41,6 +41,7 @@ public class AppFrame extends JFrame{
 		newTask = footer.getNewTask();
 		clear = footer.getClear();
 		time=footer.getTime();
+		
 		addListeners();
 	}
 	
